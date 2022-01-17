@@ -54,7 +54,7 @@ const _render = (block: BaseBlock): JSX.Element => {
     case 'child_page':
     case 'child_database':
     default:
-      break;
+      return <></>;
   }
 };
 
