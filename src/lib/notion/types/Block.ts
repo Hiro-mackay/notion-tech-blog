@@ -153,7 +153,7 @@ export interface FileObject extends Caption {
 }
 
 export interface Caption {
-  caption?: RichTextItem;
+  caption: RichTextItem;
 }
 
 export type CodeLanguage =

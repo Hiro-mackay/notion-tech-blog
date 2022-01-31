@@ -1,13 +1,13 @@
-import { NotionBlockquote } from './RendererBlock/Blockquote';
-import { NotionCallout } from './RendererBlock/Callout';
-import { NotionCode } from './RendererBlock/Code';
-import { NotionDivider } from './RendererBlock/Divider';
-import { HeadingProps, NotionHeading } from './RendererBlock/Heading';
-import { ListItemProps, NotionListItem } from './RendererBlock/ListItem';
-import { NotionMedia, NotionMediaProps } from './RendererBlock/Media';
-import { NotionParagraph } from './RendererBlock/Paragraph';
-import { NotionTodo } from './RendererBlock/Todo';
-import { NotionToggle } from './RendererBlock/Toggle';
+import { NotionBlockquote } from '../../components/Model/Notion/Blockquote';
+import { NotionCallout } from '../../components/Model/Notion/Callout';
+import { NotionCode } from '../../components/Model/Notion/Code';
+import { NotionDivider } from '../../components/Model/Notion/Divider';
+import { HeadingProps, NotionHeading } from '../../components/Model/Notion/Heading';
+import { ListItemProps, NotionListItem } from '../../components/Model/Notion/ListItem';
+import { NotionMedia, NotionMediaProps } from '../../components/Model/Notion/Media';
+import { NotionParagraph } from '../../components/Model/Notion/Paragraph';
+import { NotionTodo } from '../../components/Model/Notion/Todo';
+import { NotionToggle } from '../../components/Model/Notion/Toggle';
 import { BaseBlock, CalloutBlock, CodeBlock, ParagraphBlock, QuoteBlock, ToDoBlock, ToggleBlock } from './types';
 
 const _render = (block: BaseBlock): JSX.Element => {

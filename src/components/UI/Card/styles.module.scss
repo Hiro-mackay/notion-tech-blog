@@ -1,0 +1,27 @@
+.root {
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+
+
+	&::after {
+		border-radius: 2px;
+		box-shadow: rgb(0 0 0 / 15%) 0 2px 30px;
+		content: "";
+		inset: -10px;
+		opacity: 0;
+		position: absolute;
+		transform: scale(1);
+		transition-duration: .3s;
+		transition-duration: 200ms;
+		transition-property: opacity, transform;
+		z-index: -1;
+	}
+
+	&:hover {
+		&::after {
+			opacity: 1;
+			transform: scale(1.01);
+		}
+	}
+}

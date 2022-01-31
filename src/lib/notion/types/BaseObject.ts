@@ -6,8 +6,8 @@ export interface BaseObject {
   created_time: string;
   last_edited_time: string;
   archived: boolean;
-  icon: Icon;
-  cover: External;
+  icon?: Icon;
+  cover?: External;
   properties: Properties;
   parent: {
     type: 'page_id' | 'workspace';
@@ -47,7 +47,7 @@ export interface TextAnnotations {
 
 export interface RichTextObject {
   type: 'text' | 'mention' | 'equation';
-  annotations?: TextAnnotations;
+  annotations: TextAnnotations;
   plain_text: string;
   href?: string | null;
 }
