@@ -24,7 +24,7 @@ export const Content = ({
         {subTitle && <Typography>{subTitle}</Typography>}
         {title && <Typography variant="heading2">{title}</Typography>}
         {description && <Typography variant="body2">{description}</Typography>}
-        <div className={styles.body}>{children}</div>
+        {children}
       </section>
     </Container>
   );

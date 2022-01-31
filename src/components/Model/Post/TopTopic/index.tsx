@@ -7,14 +7,14 @@ import { Thumbnail } from '../../../UI/Thumbnail';
 import { Typography } from '../../../UI/Typography';
 import styles from './styles.module.scss';
 
-export type PostCardType = {
+export type TopTopicType = {
   title: string;
   description: string;
   thumbUrl: string | undefined;
   link: string;
 };
 
-export const TopTopic = (props: PostCardType) => {
+export const TopTopic = (props: TopTopicType) => {
   return (
     <Link href={props.link}>
       <Card>

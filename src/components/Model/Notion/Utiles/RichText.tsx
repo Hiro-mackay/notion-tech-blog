@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { RichTextItem, TextAnnotations } from '../../../../lib/notion/types';
+import { RichTextItem, TextAnnotations } from '../../../../lib/Notion/Types';
 import { getParagraphStyle, ParagraphStyleType } from './getParagraphStyle';
 
 const getStyle = (annotations: TextAnnotations) => {

@@ -1,5 +1,5 @@
 import { CopyBlock, dracula } from 'react-code-blocks';
-import { CodeBlock, RichTextItem, TextObject } from '../../../lib/notion/types';
+import { CodeBlock, RichTextItem, TextObject } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 
 const getRawCode = (text: RichTextItem) => {

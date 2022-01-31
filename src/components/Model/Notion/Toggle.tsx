@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
-import { renderer } from '../../../lib/notion/Render';
-import { ToggleBlock } from '../../../lib/notion/types';
+import { renderer } from '../../../lib/Notion/Render';
+import { ToggleBlock } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 import { RichText } from './Utiles/RichText';
 

@@ -1,4 +1,4 @@
-import { NotionResults } from '../../../../../lib/notion/types';
+import { NotionResults } from '../../../../../lib/Notion/Types';
 import { ThumbnailType } from '../../../../UI/Thumbnail';
 import { PostCard } from '../../Card';
 

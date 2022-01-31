@@ -1,4 +1,4 @@
-import { ToDoBlock } from '../../../lib/notion/types';
+import { ToDoBlock } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 import { RichText } from './Utiles/RichText';
 

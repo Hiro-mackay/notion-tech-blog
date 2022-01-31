@@ -5,13 +5,16 @@ import { Content } from '../components/Template/Content';
 import { Header } from '../components/Template/Header';
 import { Navbar } from '../components/Template/Navbar';
 import { Grid } from '../components/UI/Grid';
-import { getDatabase } from '../lib/notion';
-import { databaseId, NotionProperties, NotionResults } from '../lib/notion/types';
+import { getDatabase } from '../lib/Notion';
+import { databaseId, NotionProperties, NotionResults } from '../lib/Notion/Types';
+import { convertNotionDateToDate } from '../lib/Notion/Utils';
+import { getPlainText } from '../lib/Notion/Utils/Converter/RichText';
+import { dateFormatter } from '../lib/Utils';
 
 type PageProps = { posts: NotionResults };
 
 export const getStaticProps = async (): Promise<GetStaticPropsResult<PageProps>> => {
-  const posts = await getDatabase<NotionProperties>(databaseId);
+  const posts = await getDatabase<NotionProperties>({ database_id: databaseId });
   return {
     props: {
       posts
@@ -38,14 +41,21 @@ const Page = ({ posts }: PageProps) => {
       <Content title="Articles">
         <Grid gap={2} xs={1} md={2}>
           {posts.map((post) => {
+            const title = getPlainText(post.properties.Title.title);
+            const desc = getPlainText(post.properties.Description.rich_text);
+            const date = convertNotionDateToDate(post.properties.Date);
             return (
               <PostCard
                 link={`/${post.id}`}
-                title={post.properties.Title.title[0].plain_text}
-                description={post.properties.Description?.rich_text[0].plain_text}
-                thumbUrl={post?.cover?.external.url}
-                createdAt={new Date(post.properties.Date.date.start)}
-                mediaType="tint"
+                title={{ text: title, variant: 'heading3' }}
+                description={{ text: desc }}
+                thumbnail={{
+                  url: post?.cover?.external.url,
+                  type: 'tint'
+                }}
+                createdAt={{
+                  date: dateFormatter(date, 'YYYY月MM月DD日')
+                }}
               />
             );
           })}

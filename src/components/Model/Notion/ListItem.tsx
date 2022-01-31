@@ -1,4 +1,4 @@
-import { NumberedListItemBlock, BulletedListItemBlock } from '../../../lib/notion/types';
+import { NumberedListItemBlock, BulletedListItemBlock } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 import { RichText } from './Utiles/RichText';
 

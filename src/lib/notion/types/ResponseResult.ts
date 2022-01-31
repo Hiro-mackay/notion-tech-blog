@@ -7,3 +7,5 @@ export type NotionProperties = Record<'Title', TitleProperties> &
   Record<'Description', RichTextProperties>;
 export type NotionResult = DatabaseResponseResult<NotionProperties>;
 export type NotionResults = Array<NotionResult>;
+
+

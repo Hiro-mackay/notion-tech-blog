@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import { RichTextObject, TextAnnotations } from '../../../../lib/notion/types';
+import { RichTextObject, TextAnnotations } from '../../../../lib/Notion/Types';
 import styles from './styles.module.scss';
 
 export const StylingText = ({ annotations, children }: PropsWithChildren<RichTextObject>) => {

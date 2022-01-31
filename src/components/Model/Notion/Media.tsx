@@ -1,4 +1,4 @@
-import { BookmarkBlock, EmbedBlock, FileBlock, ImageBlock, PDFBlock, VideoBlock } from '../../../lib/notion/types';
+import { BookmarkBlock, EmbedBlock, FileBlock, ImageBlock, PDFBlock, VideoBlock } from '../../../lib/Notion/Types';
 import { EmbedRender } from './Utiles/EmbedRender';
 import { FileRender } from './Utiles/FileRender';
 import { ImageRender } from './Utiles/ImageRender';

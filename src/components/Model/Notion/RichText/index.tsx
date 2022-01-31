@@ -1,4 +1,4 @@
-import { RichTextItem } from '../../../../lib/notion/types';
+import { RichTextItem } from '../../../../lib/Notion/Types';
 import { NotionLink } from '../Link';
 import { StylingText } from './StylingText';
 

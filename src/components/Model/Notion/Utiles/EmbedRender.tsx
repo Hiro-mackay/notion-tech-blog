@@ -1,4 +1,4 @@
-import { EmbedBlock } from '../../../../lib/notion/types';
+import { EmbedBlock } from '../../../../lib/Notion/Types';
 import { Typography } from '../../../UI/Typography';
 import { NotionComponentProps } from './NotionComponentProps';
 import { RichText } from './RichText';

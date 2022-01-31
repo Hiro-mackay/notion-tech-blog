@@ -1,4 +1,4 @@
-import { HeadingOneBlock, HeadingThreeBlock, HeadingTwoBlock } from '../../../../lib/notion/types';
+import { HeadingOneBlock, HeadingThreeBlock, HeadingTwoBlock } from '../../../../lib/Notion/Types';
 import { Typography } from '../../../UI/Typography';
 import { RichText } from '../RichText';
 import { NotionComponentProps } from '../Utiles/NotionComponentProps';

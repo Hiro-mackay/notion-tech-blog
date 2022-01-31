@@ -1,4 +1,4 @@
-import { VideoBlock } from '../../../../lib/notion/types';
+import { VideoBlock } from '../../../../lib/Notion/Types';
 import { Typography } from '../../../UI/Typography';
 import { NotionComponentProps } from './NotionComponentProps';
 import { RichText } from './RichText';

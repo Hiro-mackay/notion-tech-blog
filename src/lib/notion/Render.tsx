@@ -8,7 +8,7 @@ import { NotionMedia, NotionMediaProps } from '../../components/Model/Notion/Med
 import { NotionParagraph } from '../../components/Model/Notion/Paragraph';
 import { NotionTodo } from '../../components/Model/Notion/Todo';
 import { NotionToggle } from '../../components/Model/Notion/Toggle';
-import { BaseBlock, CalloutBlock, CodeBlock, ParagraphBlock, QuoteBlock, ToDoBlock, ToggleBlock } from './types';
+import { BaseBlock, CalloutBlock, CodeBlock, ParagraphBlock, QuoteBlock, ToDoBlock, ToggleBlock } from './Types';
 
 const _render = (block: BaseBlock): JSX.Element => {
   switch (block.type) {

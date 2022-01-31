@@ -1,4 +1,4 @@
-import { QuoteBlock } from '../../../lib/notion/types';
+import { QuoteBlock } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 import { RichText } from './Utiles/RichText';
 

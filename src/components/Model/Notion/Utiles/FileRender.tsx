@@ -1,4 +1,4 @@
-import { FileBlock } from '../../../../lib/notion/types';
+import { FileBlock } from '../../../../lib/Notion/Types';
 import { NotionComponentProps } from './NotionComponentProps';
 import Link from 'next/link';
 

@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
-import { BaseBlock, NotionResult } from '../../../../../lib/notion/types';
+import { BaseBlock, NotionResult } from '../../../../../lib/Notion/Types';
+import { CardMedia } from '../../../../UI/Card/Media';
 import { Container } from '../../../../UI/Conatiner';
 import { Thumbnail } from '../../../../UI/Thumbnail';
 import { Typography } from '../../../../UI/Typography';
@@ -27,7 +28,9 @@ export const PostArticlesContent = ({ page, blocks }: PropsWithChildren<PostArti
       </div>
 
       <Container>
-        <Thumbnail src={page.cover?.external.url || ''} type="tint" />
+        <CardMedia>
+          <Thumbnail src={page.cover?.external.url || ''} type="tint" />
+        </CardMedia>
       </Container>
 
       <div className={styles.content}>

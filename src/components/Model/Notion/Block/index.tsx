@@ -6,7 +6,7 @@ import {
   QuoteBlock,
   ToDoBlock,
   ToggleBlock
-} from '../../../../lib/notion/types';
+} from '../../../../lib/Notion/Types';
 import { Divider } from '../../../UI/Divider';
 import { NotionBlockquote } from '../Blockquote';
 import { NotionCallout } from '../Callout';

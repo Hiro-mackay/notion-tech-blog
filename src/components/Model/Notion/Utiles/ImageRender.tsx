@@ -1,4 +1,4 @@
-import { ImageBlock } from '../../../../lib/notion/types';
+import { ImageBlock } from '../../../../lib/Notion/Types';
 import { NotionComponentProps } from './NotionComponentProps';
 import { RichText } from './RichText';
 import { Typography } from '../../../UI/Typography';

@@ -1,37 +1,33 @@
+import { NotionResults } from '../../../../../lib/Notion/Types';
 import { Content } from '../../../../Template/Content';
 import { Grid } from '../../../../UI/Grid';
-import { PostCard } from '../../Card';
+import { PostCard, PostCardType } from '../../Card';
 import { PostListTitle } from '../../List/Title';
+import styles from './styles.module.scss';
 
 export type ArticleNavFooterProps = {
-  postList: any;
-  prevPost: any;
-  nextPost: any;
+  postList: NotionResults;
+  prevPost: PostCardType;
+  nextPost: PostCardType;
 };
 
 export const PostArticleNavFooter = ({ postList, prevPost, nextPost }: ArticleNavFooterProps) => {
   return (
-    <Content title="Related Content">
-      <Grid gap={3} xs={1} md={3}>
-        <div>
-          <PostListTitle posts={postList} />
-        </div>
+    <div className={styles.root}>
+      <Content>
+        <Grid gap={3} xs={1} md={3}>
+          <div className={styles['more-post-card']}>
+            <PostListTitle
+              headingText="More Latest Post"
+              posts={postList}
+              moreSubmit={{ href: '/', text: 'more post' }}
+            />
+          </div>
 
-        <PostCard
-          link={`/${prevPost?.id}`}
-          title={prevPost?.properties.Title.title[0].plain_text || ''}
-          description={prevPost?.properties.Description?.rich_text[0].plain_text || ''}
-          thumbUrl={prevPost?.cover?.external.url}
-          createdAt={new Date(prevPost?.properties.Date.date.start || '')}
-        />
-        <PostCard
-          link={`/${nextPost?.id}`}
-          title={nextPost?.properties.Title.title[0].plain_text || ''}
-          description={nextPost?.properties.Description?.rich_text[0].plain_text || ''}
-          thumbUrl={nextPost?.cover?.external.url}
-          createdAt={new Date(nextPost?.properties.Date.date.start || '')}
-        />
-      </Grid>
-    </Content>
+          <PostCard {...prevPost} />
+          <PostCard {...nextPost} />
+        </Grid>
+      </Content>
+    </div>
   );
 };

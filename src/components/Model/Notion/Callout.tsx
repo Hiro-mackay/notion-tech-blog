@@ -1,4 +1,4 @@
-import { CalloutBlock } from '../../../lib/notion/types';
+import { CalloutBlock } from '../../../lib/Notion/Types';
 import { NotionComponentProps } from './Utiles/NotionComponentProps';
 import { RichText } from './Utiles/RichText';
 

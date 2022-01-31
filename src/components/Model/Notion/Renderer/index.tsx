@@ -1,4 +1,4 @@
-import { BaseBlock } from '../../../../lib/notion/types';
+import { BaseBlock } from '../../../../lib/Notion/Types';
 import { Block } from '../Block';
 
 export type RendererProps = {

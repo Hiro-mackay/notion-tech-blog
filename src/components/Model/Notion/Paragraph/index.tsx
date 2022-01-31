@@ -1,4 +1,4 @@
-import { ParagraphBlock } from '../../../../lib/notion/types';
+import { ParagraphBlock } from '../../../../lib/Notion/Types';
 import { Typography } from '../../../UI/Typography';
 import { NotionComponentProps } from '../Utiles/NotionComponentProps';
 import { RichText } from '../Utiles/RichText';

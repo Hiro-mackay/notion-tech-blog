@@ -1,4 +1,4 @@
-import { BookmarkBlock } from '../../../../lib/notion/types';
+import { BookmarkBlock } from '../../../../lib/Notion/Types';
 import { NotionComponentProps } from './NotionComponentProps';
 
 const BookmarkRender = ({ block }: NotionComponentProps<BookmarkBlock>) => {
